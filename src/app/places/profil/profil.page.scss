@@ -1,0 +1,44 @@
+/* global.scss ou votre fichier de style */
+
+ion-header {
+  --ion-toolbar-background: #fff; /* Couleur d'arrière-plan de l'en-tête */
+}
+
+.profile-image {
+  font-size: 150px; /* Ajustez la taille de l'icône du profil */
+  color: #3498db; /* Couleur de l'icône du profil */
+}
+
+.profile-name {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2c3e50; /* Couleur du nom du profil */
+}
+
+.list-icon {
+  font-size: 24px; /* Ajustez la taille des icônes dans la liste */
+  color: #7f8c8d; /* Couleur des icônes dans la liste */
+}
+
+ion-list {
+  border-top: 1px solid #ecf0f1; /* Ligne de séparation entre les éléments de la liste */
+}
+
+ion-toggle {
+  --background-checked: #3498db; /* Couleur de fond du bouton de basculement activé */
+  --border-radius: 20px; /* Rayon des coins du bouton de basculement */
+}
+
+ion-button {
+  --ion-text-color: #fff; /* Couleur du texte du bouton */
+  --background: #e74c3c; /* Couleur de fond du bouton Logout */
+  --border-radius: 10px; /* Rayon des coins du bouton Logout */
+
+  --padding-start: 50px;
+  --padding-end: 50px;
+  --padding-top: 10px;
+  --padding-bottom: 10px;
+
+}
+
+/* Ajoutez des styles supplémentaires selon vos préférences */

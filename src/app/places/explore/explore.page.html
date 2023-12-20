@@ -1,0 +1,66 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="custom-toolbar">
+    <ion-row class="search-bar-row">
+      <ion-col size="10">
+        <ion-item lines="none" class="search-bar">
+          <ion-icon name="search" slot="start"></ion-icon>
+          <ion-input
+            type="text"
+            placeholder="Destination"
+            class="rounded-input"
+            [(ngModel)]="searchQuery"
+          ></ion-input>
+
+        </ion-item>
+      </ion-col>
+      <ion-col size="2" class="search-icon-col">
+        <ion-buttons>
+          <ion-icon (click)="RecherheParTitre()" name="options-outline" class="search-icon"></ion-icon>
+        </ion-buttons>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card class="card">
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-toggle (click)="filterPlaceByPrice()">Filtrer par le prix le plus bas</ion-toggle>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+  <ion-segment value="default">
+    <ion-segment-button value="default">
+      <ion-label>All Places</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="segment">
+      <ion-label>Reservables</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
+  <ion-row>
+    <ion-col size="12" size-sm="8" offset-sm="2">
+      <ion-list>
+        <ion-item *ngFor="let place of places || []">
+          <ion-card class="place-card">
+            <ion-img [src]="place.imageUrl" class="place-image"></ion-img>
+            <ion-card-header>
+              <ion-card-title>{{ place.title }}</ion-card-title>
+              <ion-card-subtitle>{{ place.price | currency }} / Night</ion-card-subtitle>
+            </ion-card-header>
+            <ion-card-content>
+              <p>{{ place.description }}</p>
+            </ion-card-content>
+            <div class="ion-text-center">
+              <ion-button routerDirection="forward" fill="clear" color="secondary"
+                          routerLink="/places/tabs/discover/{{places[0].id}}">Plus d'infos</ion-button>
+            </div>
+          </ion-card>
+        </ion-item>
+      </ion-list>
+    </ion-col>
+  </ion-row>
+</ion-content>

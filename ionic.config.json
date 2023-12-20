@@ -1,0 +1,7 @@
+{
+  "name": "Efm_Ionic",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

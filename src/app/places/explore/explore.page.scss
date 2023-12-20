@@ -1,0 +1,86 @@
+ion-header {
+  --background: #ffffff; /* Couleur de fond du header */
+  --color: #333333; /* Couleur du texte du header */
+}
+
+ion-toolbar {
+  --background: transparent; /* Fond transparent pour le header */
+  --border-width: 0; /* Supprime la bordure du header */
+}
+
+ion-row.search-bar-row {
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+ion-item.search-bar {
+  background-color: #ffffff; /* Couleur de fond de la barre de recherche */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+ion-icon.search-icon {
+  color: #333333; /* Couleur de l'icône de recherche */
+}
+
+ion-input.rounded-input {
+  --padding-start: 10px;
+  border-radius: 0 10px 10px 0; /* Coins arrondis à gauche */
+}
+
+ion-buttons.search-icon-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ion-content {
+  --background: #ffffff; /* Couleur de fond du contenu */
+}
+
+ion-card.card {
+  background-color: #ffffff; /* Couleur de fond de la carte */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+ion-toggle {
+  color: #333333; /* Couleur du texte du bouton de bascule */
+}
+
+ion-segment {
+  --color-selected: #ffffff; /* Couleur du texte de l'onglet sélectionné */
+  --background-selected: #3498db; /* Couleur de fond de l'onglet sélectionné */
+  --border-radius: 10px; /* Coins arrondis des onglets */
+}
+
+ion-list {
+  background-color: #ffffff; /* Couleur de fond de la liste */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+ion-card.place-card {
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+ion-img.place-image {
+  border-radius: 10px 10px 0 0; /* Coins arrondis de l'image de la place */
+}
+
+ion-card-header,
+ion-card-subtitle {
+  color: #333333; /* Couleur du texte de l'en-tête et du sous-titre de la carte */
+}
+
+ion-card-content p {
+  color: #666666; /* Couleur du texte du contenu de la carte */
+}
+
+ion-icon {
+  color: #333333; /* Couleur de l'icône de la place */
+
+  font-size: 35px;
+}
